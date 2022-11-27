@@ -233,6 +233,17 @@ h6 {
     filter: brightness(2);
 }
 
+.main-content-detail .recipe-list-item {
+    max-width: 184rem;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.main-content-detail .recipe-list-item:hover {
+    transform: scale(1);
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.2);
+}
+
 .main-footer {
 display: flex;
 align-items: center;
@@ -251,3 +262,4 @@ transition: all 300ms ease-in-out;
 .main-footer a:hover {
 filter: brightness(.8);
 }
+

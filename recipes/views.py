@@ -5,7 +5,7 @@ def home(request):
     return render(request, 'recipes/pages/home.html', {'name':'Ferdinandy'})
 
 def recipe(request,id):
-    return render(request, 'recipes/pages/home.html', {'name':'Ferdinandy'})
+    return render(request, 'recipes/pages/recipe-view.html')
 
 def contact(request):
     return render(request, 'recipes/contact.html')
