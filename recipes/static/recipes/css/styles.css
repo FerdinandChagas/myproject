@@ -236,7 +236,6 @@ h6 {
 .main-content-detail .recipe-list-item {
     max-width: 184rem;
     margin: 0 auto;
-    background-color: red;
 }
 
 .main-content-detail .recipe-list-item:hover {
