@@ -19,9 +19,15 @@ def category(request, category_id):
         ).order_by('-id')
     return render(request, 'recipes/pages/category.html', context={
         'recipes': recipes,
+        'title' : f'{recipes.first().category.name} - | Category'
     })
 
 def recipe(request, id):
+    recipes = Recipe.objects.filter(
+       pk=id,
+        is_published=True,
+    ).order_by('-id').first()
+        
     return render(request, 'recipes/pages/recipe-view.html', context={
         'recipe': Recipe.objects.get(id=id),
         'is_detail_page': True,
