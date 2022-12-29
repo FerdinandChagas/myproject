@@ -17,6 +17,7 @@ def make_recipe():
         'servings_unit': 'Porção',
         'preparation_steps': fake.text(3000),
         'created_at': fake.date_time(),
+        'is_published': True,
         'author':{
             'first_name': fake.first_name(),
             'last_name': fake.last_name(),
