@@ -22,6 +22,7 @@ class Recipe(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
+    mom = models.CharField(max_length=80)
     cover = models.ImageField(
         upload_to='recies/covers/%Y/%m/%d/', blank=True, default='')
     category = models.ForeignKey(
